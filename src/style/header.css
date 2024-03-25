@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+}
+header h1 {
+  margin: 0;
+  width: 50%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+header nav .active {
+  text-decoration: underline;
+}
+header nav a {
+  list-style-type: none;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  header h1 svg {
+    width: 80%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */

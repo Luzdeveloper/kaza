@@ -1,0 +1,21 @@
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}/*# sourceMappingURL=index.css.map */
