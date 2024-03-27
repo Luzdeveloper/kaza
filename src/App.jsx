@@ -1,18 +1,19 @@
-import "../src/style/index.css";
-import Banner from "./component/banniere";
-import { Footer } from "./component/footer";
-import { Header } from "./component/header";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Pages/Homepage";
+import { AnnouncementDetails } from "./Pages/AnnouncementDetails";
+import { Header } from "./component/Header";
+import { Footer } from "./component/Footer";
 
 function App() {
   return (
     <>
-      <div className="header">
-        <Header />
-        <Banner />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<AnnouncementDetails />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
