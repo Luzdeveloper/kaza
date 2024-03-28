@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import annoncesData from "../data/logement.json";
+import { Collapsible } from "../component/Collapse";
+import { Slide } from "../component/Slide";
+import { Tags } from "../component/Tag";
 
 export function AnnouncementDetails() {
   const [announcement, setAnnouncement] = useState(null);
@@ -27,7 +30,6 @@ export function AnnouncementDetails() {
         alt={`photo de l'annonce ${announcement.title}`}
       />
       <p>{announcement.description}</p>
-      {/* Ajoutez d'autres détails de l'annonce ici */}
     </div>
   );
 }
