@@ -10,7 +10,7 @@ export function Home() {
 
   return (
     <div>
-      <Banner title={title} />
+      <Banner title={title} image="src/assets/banner2.png" />
       <Card annonceData={annoncesData} />
     </div>
   );

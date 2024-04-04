@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "../style/collapse.css";
 
-export const Collapsible = ({ label, content, initialOpen = false }) => {
+export const Collapse = ({ label, content, initialOpen = false }) => {
   // Définir l'état ouvert du composant à l'aide du hook useState
   const [open, setOpen] = useState(initialOpen);
 

@@ -3,7 +3,7 @@ import annonces from "../data/logement.json";
 import React, { useState, useEffect } from "react";
 
 // Définition du composant Rating
-function Rating() {
+export function Rating() {
   // Récupération de l'identifiant de l'annonce à partir de l'URL à l'aide du hook useParams
   const { id } = useParams();
 
@@ -35,5 +35,4 @@ function Rating() {
   return <div className="ratings-star">{stars}</div>;
 }
 
-// Exportation du composant Rating
 export default Rating;

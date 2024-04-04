@@ -1,70 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
+// Définition du composant Slide qui prend un tableau de photos en paramètre
 export function Slide({ pictures }) {
+  // Déclaration d'un état local pour stocker l'index de la diapositive actuelle
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  //utilisation de useEffect pour gerer le changement de diapositive
+  // Définition d'une fonction pour gérer le clic sur le bouton précédent
+  const handlePrevClick = () => {
+    // Mise à jour de l'état currentSlide en boucle pour afficher la diapositive précédente
+    setCurrentSlide((currentSlide - 1 + pictures.length) % pictures.length);
+  };
 
-  useEffect(() => {
-    const slides = document.querySelectorAll(".slide");
+  // Définition d'une fonction pour gérer le clic sur le bouton suivant
+  const handleNextClick = () => {
+    // Mise à jour de l'état currentSlide en boucle pour afficher la diapositive suivante
+    setCurrentSlide((currentSlide + 1) % pictures.length);
+  };
 
-    //Affichez une diapo specifique
-    const showSlide = (index) => {
-      //Parcourir les diapo et les masquer et afficher seulement celle qui correspond
-      slides.forEach((slide, i) => {
-        slide.style.display = i === index ? "block" : "none";
-      });
-      setCurrentSlide(index);
-    };
-    //Affichez diapo prececdente
-    const prevSlide = () => {
-      setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
-    };
-    //Affichez diapo suivante
-    const NextSlide = () => {
-      setCurrentSlide((currentSlide + 1) % slides.length);
-    };
-    // diapo initial affiché
-    showSlide(currentSlide);
-    //Ajout des ecouteurs d'évenment
-    document?.querySelector(".prev")?.addEventListener("click", prevSlide);
-    document?.querySelector(".next")?.addEventListener("click", NextSlide);
-
-    // Fonction pour supprimer les écouteurs d'événements lorsque le composant n'est plus utilisé
-    return () => {
-      if (slides.length > 1) {
-        document
-          ?.querySelector(".prev")
-          ?.removeEventListener("click", prevSlide);
-
-        document
-          ?.querySelector(".next")
-          ?.removeEventListener("click", NextSlide);
-      }
-    };
-  }, [currentSlide]);
-
-  // Rendu du conteneur de diapositives
+  // Rendu du composant
   return (
     <div className="slide-container">
-      {/* Si il y a plus d'une photo, afficher les flèches de navigation */}
+      {/* Affichage des boutons précédent et suivant uniquement si il y a plus d'une photo */}
       {pictures.length > 1 && (
         <div className="arrow">
-          <button className="prev">
+          <button className="prev" onClick={handlePrevClick}>
             <i className="fa-solid fa-chevron-left"></i>
           </button>
-          <button className="next">
+          <button className="next" onClick={handleNextClick}>
             <i className="fa-solid fa-chevron-right"></i>
           </button>
         </div>
       )}
-      {/* Parcourir les photos et afficher chacune d'elles en tant que diapositive */}
+
+      {/* Affichage des diapositives */}
       {pictures.map((picture, index) => (
-        <div key={index} className="slide">
+        <div
+          key={index}
+          className="slide"
+          style={{ display: index === currentSlide ? "block" : "none" }}
+        >
           <img src={picture} alt="Diaporama" />
         </div>
       ))}
-      {/* Si il y a plus d'une photo, afficher le compteur de diapositives */}
+
+      {/* Affichage du compteur de diapositives uniquement si il y a plus d'une photo */}
       {pictures.length > 1 && (
         <div className="counter">
           {currentSlide + 1}/{pictures.length}
