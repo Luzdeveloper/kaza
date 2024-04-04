@@ -4,34 +4,39 @@
   align-items: center;
   gap: 20px;
 }
-.annonce-details .slide-container {
+
+.slide-container {
   height: 415px;
   width: 1240px;
   border-radius: 20px;
   overflow: hidden;
 }
-.annonce-details .slide-container img {
+
+.slide-container img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.annonce-details .annonce-info {
+
+.annonce-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   width: 100%;
 }
-.annonce-details .annonce-info .annonce-title {
+
+.annonce-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   text-align: center;
 }
-.annonce-details .annonce-info .annonce-title h2 {
-  color: rgb(255, 96, 96);
+
+.annonce-title h2 {
+  color: #ff6060;
   font-size: 36px;
   font-weight: 500;
   line-height: 51px;
@@ -40,42 +45,49 @@
   margin-bottom: 2px;
   margin-top: 5px;
 }
-.annonce-details .annonce-info .annonce-title p {
+
+.annonce-title p {
   font-weight: 500;
   font-size: 18px;
   margin-top: 0px;
 }
-.annonce-details .annonce-info .tags {
+
+.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.annonce-details .annonce-info .host-info {
+
+.host-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
-.annonce-details .annonce-info .host-info .host-name {
+
+.host-name {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.annonce-details .annonce-info .host-info .host-name p {
-  color: rgb(255, 96, 96);
+
+.host-name p {
+  color: #ff6060;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: right;
 }
-.annonce-details .annonce-info .host-info .host-name img {
+
+.host-name img {
   border-radius: 50%;
   width: 64px;
   height: 64px;
 }
-.annonce-details .annonce-collapse {
+
+.annonce-collapse {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -83,13 +95,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .annonce-details .slide-container {
+  .slide-container {
     height: 255px;
   }
-  .annonce-details .slide-container img {
+  .slide-container img {
     height: 255px;
   }
-  .annonce-details .annonce-info .annonce-title h2 {
+  .annonce-title h2 {
     font-size: 25px;
     line-height: 38px;
   }

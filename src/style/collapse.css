@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 80%;
 }
-
 .collapse .button {
   display: flex;
   flex-direction: row;
@@ -17,8 +16,8 @@
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
 }
-
 .collapse .button .collapse-label {
   font-size: 24px;
   font-weight: 700;
@@ -26,7 +25,6 @@
   letter-spacing: 0em;
   color: white;
 }
-
 .collapse .button .fa-solid {
   font-size: 24px;
   font-weight: 700;
@@ -35,7 +33,6 @@
   color: white;
   cursor: pointer;
 }
-
 .collapse .content {
   font-size: 18px;
   font-weight: 400;
@@ -49,14 +46,15 @@
   padding-bottom: 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
 }
-
 .collapse .content ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
 }
-
 @media screen and (max-width: 768px) {
   .collapse {
     width: 100%;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../style/slide.css";
 
 // Définition du composant Slide qui prend un tableau de photos en paramètre
 export function Slide({ pictures }) {
