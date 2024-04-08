@@ -1,0 +1,41 @@
+.apropos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.apropos .collapse-container {
+  width: 100%;
+  max-width: 800px;
+}
+.apropos .collapse-container .collapse-label {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+  cursor: pointer;
+}
+.apropos .collapse-container .collapse-content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #646464;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+@media screen and (max-width: 768px) {
+  .apropos .collapse-container {
+    max-width: 100%;
+  }
+  .apropos .collapse-container .collapse-label {
+    font-size: 20px;
+  }
+  .apropos .collapse-container .collapse-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=apropos.css.map */

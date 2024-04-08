@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import annonces from "../data/logement.json";
 import React, { useState, useEffect } from "react";
+import "../style/rates.css";
 
 // Définition du composant Rating
 export function Rating() {

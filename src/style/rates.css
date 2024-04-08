@@ -1,0 +1,63 @@
+.annonce-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.annonce-details .annonce-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.annonce-details .annonce-info .host-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.annonce-details .annonce-info .host-info .host-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.annonce-details .annonce-info .host-info .host-name .ratings-star {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.annonce-details .annonce-info .host-info .host-name .ratings-star .fa-star {
+  color: rgb(227, 227, 227);
+  font-size: 30px;
+}
+.annonce-details .annonce-info .host-info .host-name .ratings-star .active-star {
+  color: rgb(255, 96, 96);
+}
+
+@media screen and (max-width: 768px) {
+  .annonce-details {
+    padding: 0 10px;
+  }
+  .annonce-details .annonce-info .host-info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .annonce-details .annonce-info .host-info .host-name {
+    justify-content: center;
+  }
+  .annonce-details .annonce-info .host-info .host-name .ratings-star {
+    gap: 3px;
+  }
+  .annonce-details .annonce-info .host-info .host-name .ratings-star .fa-star {
+    font-size: 19px;
+  }
+}/*# sourceMappingURL=rates.css.map */

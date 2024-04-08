@@ -30,16 +30,29 @@
     }
 
     .next {
-      cursor: pointer;
-      color: white;
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2;
+      position: absolute;
       border: none;
       background: none;
+      cursor: pointer;
+      color: white;
+      left: 0;
       font-size: 96px;
-      right: 0;
+      padding-left: 15px;
     }
 
     .prev {
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2;
+      position: absolute;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
       left: 0;
+      font-size: 96px;
+      padding-left: 15px;
     }
   }
 

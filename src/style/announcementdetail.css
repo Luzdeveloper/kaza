@@ -3,11 +3,14 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .slide-container {
   height: 415px;
-  width: 1240px;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -104,5 +107,35 @@
   .annonce-title h2 {
     font-size: 25px;
     line-height: 38px;
+  }
+  .host-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .host-name {
+    justify-content: center;
+  }
+  .host-name img {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .annonce-details {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .annonce-title h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .annonce-title p {
+    font-size: 16px;
+  }
+  .host-name p {
+    font-size: 16px;
+  }
+  .annonce-collapse {
+    gap: 10px;
   }
 }/*# sourceMappingURL=announcementdetail.css.map */
