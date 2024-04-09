@@ -30,14 +30,14 @@ export function FicheLogement() {
         <div className="annonce-title">
           <h2>{titre}</h2>
           <p>{location}</p>
+          <Tags tags={tags} />
         </div>
-        <Tags tags={tags} />
         <div className="host-info">
           <div className="host-name">
             <p>{nameHost}</p>
             <img src={pictureHost} alt="photo de l'hôte" />
+            <Rating />
           </div>
-          <Rating />
         </div>
       </section>
       <section className="annonce-collapse">

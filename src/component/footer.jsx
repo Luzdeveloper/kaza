@@ -3,7 +3,7 @@ import "../style/footer.css";
 
 export function Footer() {
   return (
-    <footer>
+    <footer className="site-footer">
       <svg
         width="122"
         height="39.44"
