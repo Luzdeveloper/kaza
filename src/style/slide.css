@@ -13,7 +13,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
 }
 .slide-container .arrow button {
@@ -25,12 +24,12 @@
   font-size: 48px;
   padding: 0 15px;
 }
-.slide-container .arrow .next {
+.slide-container .arrow button.next {
   right: 0;
   font-size: 96px;
   padding-right: 15px;
 }
-.slide-container .arrow .prev {
+.slide-container .arrow button.prev {
   left: 0;
   font-size: 96px;
   padding-left: 15px;
@@ -57,27 +56,26 @@
   font-size: 24px;
 }
 @media only screen and (max-width: 768px) {
+  .slide-container {
+    height: 255px;
+  }
   .slide-container .counter {
     display: none;
   }
-  .slide-container .slide-container {
+  .slide-container .slide {
     height: 255px;
   }
-  .slide-container .slide-container .slide {
+  .slide-container .slide img {
     height: 255px;
   }
-  .slide-container .slide-container .slide img {
-    height: 255px;
-  }
-  .slide-container .slide-container .arrow {
+  .slide-container .arrow {
     gap: 20px;
   }
-  .slide-container .slide-container button {
+  .slide-container .arrow button {
     font-size: 36px;
   }
-  .slide-container .slide-container .next,
-  .slide-container .slide-container .prev {
-    font-size: 72px;
+  .slide-container .arrow button.next, .slide-container .arrow button.prev {
+    font-size: 24px;
     padding-left: 10px;
     padding-right: 10px;
   }

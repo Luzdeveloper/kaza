@@ -13,7 +13,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
 
     button {
@@ -24,18 +23,18 @@
       color: white;
       font-size: 48px;
       padding: 0 15px;
-    }
 
-    .next {
-      right: 0;
-      font-size: 96px;
-      padding-right: 15px;
-    }
+      &.next {
+        right: 0;
+        font-size: 96px;
+        padding-right: 15px;
+      }
 
-    .prev {
-      left: 0;
-      font-size: 96px;
-      padding-left: 15px;
+      &.prev {
+        left: 0;
+        font-size: 96px;
+        padding-left: 15px;
+      }
     }
   }
 
@@ -63,32 +62,32 @@
   }
 
   @media only screen and (max-width: 768px) {
+    height: 255px;
+
     .counter {
       display: none;
     }
 
-    .slide-container {
+    .slide {
       height: 255px;
-      .slide {
-        height: 255px;
-        img {
-          height: 255px;
-        }
-      }
 
-      .arrow {
-        gap: 20px;
+      img {
+        height: 255px;
       }
+    }
+
+    .arrow {
+      gap: 20px;
 
       button {
         font-size: 36px;
-      }
 
-      .next,
-      .prev {
-        font-size: 72px;
-        padding-left: 10px;
-        padding-right: 10px;
+        &.next,
+        &.prev {
+          font-size: 24px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
       }
     }
   }
