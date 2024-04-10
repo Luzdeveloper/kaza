@@ -102,7 +102,6 @@ body {
   .annonce-details {
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     .slide-container {
       height: 255px;
@@ -117,14 +116,12 @@ body {
     .annonce-info {
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
       width: 100%;
     }
 
     .host-info {
-      flex-direction: column;
+      flex-direction: row-reverse;
       justify-content: space-between;
-      align-items: center;
       width: 100%;
     }
 
