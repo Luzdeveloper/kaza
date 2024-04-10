@@ -29,6 +29,7 @@ body {
   flex-direction: row;
   gap: 20px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .annonce-title {
@@ -63,9 +64,9 @@ body {
 .host-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .host-name {
