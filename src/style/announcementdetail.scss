@@ -144,3 +144,12 @@ body {
     width: 100%;
   }
 }
+.slide-container {
+  height: 255px;
+  .slide {
+    height: 255px;
+    img {
+      height: 255px;
+    }
+  }
+}

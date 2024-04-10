@@ -138,4 +138,13 @@ body {
     justify-content: space-between;
     width: 100%;
   }
+}
+.slide-container {
+  height: 255px;
+}
+.slide-container .slide {
+  height: 255px;
+}
+.slide-container .slide img {
+  height: 255px;
 }/*# sourceMappingURL=announcementdetail.css.map */
