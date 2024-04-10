@@ -68,6 +68,7 @@ body {
   gap: 20px;
   box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
 }
 
 .host-name {
