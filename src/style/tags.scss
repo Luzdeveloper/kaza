@@ -47,6 +47,12 @@
 @media screen and (max-width: 768px) {
   .annonce-details {
     .annonce-info {
+      .annonce-title {
+        flex-direction: column;
+        h2 {
+          font-size: 25px;
+        }
+      }
       .tags {
         span {
           font-size: 10px;

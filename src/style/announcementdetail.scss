@@ -35,9 +35,7 @@ body {
 .annonce-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
-  text-align: center;
 }
 
 .annonce-title h2 {
@@ -124,14 +122,10 @@ body {
 
   .annonce-title {
     flex-direction: column;
-    align-items: center;
+    h2 {
+      font-size: 25px;
+    }
   }
-
-  .annonce-title h2 {
-    text-align: left;
-    margin-right: 20px;
-  }
-
   .tags {
     flex-direction: row;
     justify-content: flex-start;
@@ -151,5 +145,12 @@ body {
     img {
       height: 255px;
     }
+  }
+}
+
+.annonce-title {
+  flex-direction: column;
+  h2 {
+    font-size: 25px;
   }
 }
