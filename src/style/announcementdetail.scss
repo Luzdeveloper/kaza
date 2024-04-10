@@ -100,7 +100,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .annonce-details .annonce-info .host-info {
     flex-direction: row-reverse;
     justify-content: space-between;
