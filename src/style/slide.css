@@ -63,14 +63,20 @@
   .slide-container .slide-container {
     height: 255px;
   }
-  .slide-container .arrow {
+  .slide-container .slide-container .slide {
+    height: 255px;
+  }
+  .slide-container .slide-container .slide img {
+    height: 255px;
+  }
+  .slide-container .slide-container .arrow {
     gap: 20px;
   }
-  .slide-container button {
+  .slide-container .slide-container button {
     font-size: 36px;
   }
-  .slide-container .next,
-  .slide-container .prev {
+  .slide-container .slide-container .next,
+  .slide-container .slide-container .prev {
     font-size: 72px;
     padding-left: 10px;
     padding-right: 10px;

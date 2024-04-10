@@ -69,21 +69,27 @@
 
     .slide-container {
       height: 255px;
-    }
+      .slide {
+        height: 255px;
+        img {
+          height: 255px;
+        }
+      }
 
-    .arrow {
-      gap: 20px;
-    }
+      .arrow {
+        gap: 20px;
+      }
 
-    button {
-      font-size: 36px;
-    }
+      button {
+        font-size: 36px;
+      }
 
-    .next,
-    .prev {
-      font-size: 72px;
-      padding-left: 10px;
-      padding-right: 10px;
+      .next,
+      .prev {
+        font-size: 72px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 }
