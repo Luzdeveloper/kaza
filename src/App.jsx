@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "./Pages/Homepage";
 import { FicheLogement } from "./Pages/AnnouncementDetails";
 import { Header } from "./component/Header";
@@ -8,15 +8,18 @@ import { Apropos } from "./Pages/Apropos";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<FicheLogement />} />
-        <Route path="/aPropos" element={<Apropos />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/logement/:id" element={<FicheLogement />} />
+          <Route path="/aPropos" element={<Apropos />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

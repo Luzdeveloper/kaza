@@ -8,17 +8,13 @@
   grid-row-gap: 0px;
 }
 .slide-container .arrow {
-  position: absolute;
   z-index: 2;
   top: 50%;
-  transform: translateY(-50%);
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  flex-direction: row;
+  align-items: center;
 }
 .slide-container .arrow button {
   position: absolute;
