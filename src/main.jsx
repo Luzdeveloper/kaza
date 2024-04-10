@@ -7,6 +7,7 @@ import { FicheLogement } from "./Pages/AnnouncementDetails";
 import { Apropos } from "./Pages/Apropos";
 import Header from "./component/Header";
 import { Footer } from "./component/Footer";
+import { Error } from "./Pages/Erreur404";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
