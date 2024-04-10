@@ -1,4 +1,4 @@
-import "../style/banniere.css";
+import "../style/banniere.scss";
 export function Banner({ image, title }) {
   return (
     <div className="banner-container">

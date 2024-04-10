@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/cards.css";
+import "../style/cards.scss";
 import { AnnounceCard } from "./Announcecard";
 
 export function Card({ annonceData }) {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/collapse.css";
+import "../style/collapse.scss";
 
 export const Collapse = ({ label, content, initialOpen = false }) => {
   // Définir l'état ouvert du composant à l'aide du hook useState

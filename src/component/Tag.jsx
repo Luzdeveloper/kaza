@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/tags.css";
+import "../style/tags.scss";
 
 export function Tags({ tags }) {
   return (

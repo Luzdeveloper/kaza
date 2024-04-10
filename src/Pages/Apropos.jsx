@@ -1,6 +1,6 @@
 import { Banner } from "../component/Banner";
 import { Collapse } from "../component/Collapse";
-import "../style/apropos.css";
+import "../style/apropos.scss";
 
 export function Apropos() {
   return (

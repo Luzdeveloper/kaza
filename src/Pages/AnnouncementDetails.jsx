@@ -5,7 +5,7 @@ import { Rating } from "../component/Rates.jsx";
 import { Slide } from "../component/Slide.jsx";
 import { Tags } from "../component/Tag.jsx";
 import annoncesData from "../data/logement.json";
-import "../style/announcementdetail.css";
+import "../style/announcementdetail.scss";
 
 export function FicheLogement() {
   const { id } = useParams();

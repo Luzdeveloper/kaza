@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import "../style/header.css";
+import "../style/header.scss";
 
 export function Header() {
   const location = useLocation();

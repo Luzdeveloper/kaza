@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/announcecard.css";
+import "../style/announcecard.scss";
 export function AnnounceCard({ cover, titre, id }) {
   // Vérifie si les props sont définis
   if (!cover || !titre || !id) {

@@ -6,6 +6,7 @@ import { Header } from "./component/Header";
 import { Footer } from "./component/Footer";
 import { Apropos } from "./Pages/Apropos";
 import { Error } from "./Pages/Erreur404";
+import "../src/style/index.scss";
 
 function App() {
   return (
