@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 100%;
 }
@@ -20,8 +21,10 @@ body {
 }
 
 .slide-container img {
-  height: 100%;
-  width: 100%;
+  height: auto; /* Règle la hauteur automatiquement en fonction de la largeur */
+  max-width: 100%; /* Limite la largeur maximale de l'image à 100% de son conteneur parent */
+  display: block; /* Supprime les espaces blancs autour de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement dans son conteneur parent */
   -o-object-fit: cover;
      object-fit: cover;
 }
