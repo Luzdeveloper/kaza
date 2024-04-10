@@ -4,11 +4,10 @@ body {
 
 .annonce-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
   max-width: 100%;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -20,16 +19,14 @@ body {
 }
 
 .slide-container img {
-  height: auto; /* Règle la hauteur automatiquement en fonction de la largeur */
-  max-width: 100%; /* Limite la largeur maximale de l'image à 100% de son conteneur parent */
-  display: block; /* Supprime les espaces blancs autour de l'image */
-  margin: 0 auto; /* Centre l'image horizontalement dans son conteneur parent */
+  max-width: 100%;
+  margin: 0 auto;
   object-fit: cover;
 }
 
 .annonce-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
   width: 100%;
@@ -68,9 +65,10 @@ body {
 
 .host-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .host-name {
@@ -103,11 +101,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .annonce-info {
-    flex-direction: row;
+  .annonce-details .annonce-info .host-info {
+    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 15px;
+    align-items: center;
+    width: 100%;
   }
 
   .annonce-title {
@@ -120,29 +118,13 @@ body {
     margin-right: 20px;
   }
 
-  .annonce-title p {
-    order: 2;
-  }
-
   .tags {
-    order: 3;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
   }
 
-  .host-info {
-    order: 4;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .host-name {
-    order: 2;
-  }
-
   .annonce-collapse {
-    order: 5;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
