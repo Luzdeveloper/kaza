@@ -60,6 +60,9 @@
   .slide-container .counter {
     display: none;
   }
+  .slide-container .slide-container {
+    height: 225px;
+  }
   .slide-container .arrow {
     gap: 20px;
   }
