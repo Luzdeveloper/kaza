@@ -36,8 +36,8 @@ export function FicheLogement() {
           <div className="host-name">
             <p>{nameHost}</p>
             <img src={pictureHost} alt="photo de l'hôte" />
-            <Rating />
           </div>
+          <Rating />
         </div>
       </section>
       <section className="annonce-collapse">
