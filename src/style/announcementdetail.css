@@ -102,14 +102,26 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .annonce-details .annonce-info .host-info {
-    flex-direction: row-reverse;
+  .annonce-details {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .annonce-info {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .host-info {
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
   .annonce-title {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
   .annonce-title h2 {
