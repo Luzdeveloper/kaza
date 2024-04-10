@@ -137,7 +137,7 @@ body {
     width: 100%;
   }
   .annonce-details .annonce-collapse {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
   }
