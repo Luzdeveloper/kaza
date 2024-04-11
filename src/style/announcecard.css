@@ -10,9 +10,6 @@
   align-items: end;
   position: relative;
   margin: 10px;
-  min-height: 340px;
-  max-height: 341px;
-  height: auto;
 }
 .announce-card .filter {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
@@ -48,18 +45,31 @@
   text-align: left;
   padding-left: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .announce-card {
+    width: 45%;
+    margin: 0 10px 10px;
+  }
+  .announce-card img {
+    min-height: 255px;
+    max-height: 255px;
+  }
+  .announce-card p {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .announce-card {
     width: 100%;
     margin: 0;
-    min-height: 255px;
-    max-height: 255px;
-    height: auto;
   }
   .announce-card img {
     min-height: 255px;
     max-height: 255px;
     height: auto;
+  }
+  .announce-card p {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=announcecard.css.map */

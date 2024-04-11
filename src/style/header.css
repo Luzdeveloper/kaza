@@ -38,4 +38,8 @@ header nav a {
     width: 80%;
     height: 100%;
   }
+  nav a {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=header.css.map */

@@ -10,9 +10,6 @@
   align-items: end;
   position: relative;
   margin: 10px;
-  min-height: 340px;
-  max-height: 341px;
-  height: auto;
 
   .filter {
     background: linear-gradient(
@@ -54,20 +51,35 @@
     text-align: left;
     padding-left: 10px;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 45%;
+    margin: 0 10px 10px;
+
+    img {
+      min-height: 255px;
+      max-height: 255px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .announce-card {
     width: 100%;
     margin: 0;
-    min-height: 255px;
-    max-height: 255px;
-    height: auto;
 
     img {
       min-height: 255px;
       max-height: 255px;
       height: auto;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }
