@@ -5,8 +5,8 @@ import { FicheLogement } from "./Pages/AnnouncementDetails";
 import { Apropos } from "./Pages/Apropos";
 import { Error } from "./Pages/Erreur404";
 import "../src/style/index.scss";
-import { Header } from "./component/Header";
-import { Footer } from "./component/Footer";
+import { Header } from "./component/header";
+import { Footer } from "./component/footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
