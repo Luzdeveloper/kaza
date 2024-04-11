@@ -17,5 +17,3 @@ export function AnnounceCard({ cover, titre, id }) {
     </Link>
   );
 }
-
-export default AnnounceCard;

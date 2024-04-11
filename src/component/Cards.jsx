@@ -27,5 +27,3 @@ export function Card({ annonceData }) {
     );
   }
 }
-
-export default Card;

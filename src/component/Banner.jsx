@@ -9,5 +9,3 @@ export function Banner({ image, title }) {
     </div>
   );
 }
-
-export default Banner;

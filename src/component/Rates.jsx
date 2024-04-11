@@ -35,5 +35,3 @@ export function Rating() {
   // Retour du JSX pour afficher les étoiles
   return <div className="ratings-star">{stars}</div>;
 }
-
-export default Rating;
